@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- <h1>Hello Server Spring</h1>
+    <h1 th:text="${title}"></h1>
+    <h1 th:text="${hello}"></h1> -->
+
+    <h1>Login Form</h1>
+    <h1 th:text="${username}"></h1>
+    <h1 th:text="${password}"></h1>
+
+    <form action="/login/check" method="post">
+      <label for="">User name</label>
+      <input type="text" name="username" id="" />
+      <label for="">Password</label>
+      <input type="password" name="password" id="" />
+      <br />
+      <button>Submit</button>
+    </form>
+  </body>
+</html>
